@@ -8,15 +8,30 @@ public class Ahorcado {
 		Scanner sc = new Scanner(System.in);
 
 		int elegir = 0;
-
-		System.out.println("Bienvenido/a al Ahorcado \n");
+		boolean repetir = true;
+		
+		
+		while(repetir) {
+		System.out.println("Bienvenido/a al Menu del ahorcado \n");
 
 		System.out.println("Elige entre los siguientes:\n" + "1. Jugar\r\n" + "2. Mostrar Ranking\r\n" + "3. Salir \n");
 		elegir = sc.nextInt();
 
+		
+			
+		
+		
 		if (elegir == 1) {
 			juego();
+		}else if(elegir == 3) {
+			repetir = false;
 		}
+		
+		
+		
+		}
+		
+		System.out.println("Hasta pronto!!!");
 
 	}
 
@@ -28,7 +43,6 @@ public class Ahorcado {
 		String NomFit = "./text.txt";
 		String s[] = new String[65194];
 
-		int contadorpalabras = 0;
 		boolean repetir = true;
 		boolean repetirtodo = true;
 		char letra;
@@ -37,6 +51,7 @@ public class Ahorcado {
 		int temp = 0;
 		int fin = 0;
 		String volver = "none";
+		
 
 		try {
 			// Abrir el fichero indicado en la variable nombreFichero
@@ -56,12 +71,14 @@ public class Ahorcado {
 	
 		while(repetirtodo) {
 			repetir = true;
+			char comprobar[] = new char [27];
+			int cn = 0;
 		
 		int aleatorio = rand.nextInt(65194);
 
 		tiempoespera();
 
-			//System.out.println(s[aleatorio]);//Printa la letra
+			System.out.println(s[aleatorio]);//Printa la letra
 
 			char[] palabra = s[aleatorio].toCharArray();
 			char[] guionesbueno = new char [palabra.length];
@@ -70,21 +87,34 @@ public class Ahorcado {
 				guionesbueno[i] = '_';
 			}
 
-			mostrar(guionesbueno);
+			
 	
 		while(repetir) {
+			
 				
-	System.out.println("\n\nInserta una letra");
+	System.out.println("\nInserta una letra");
+	mostrar(guionesbueno);
 	letra = sc.next().charAt(0);
+	
+	for (int i = 0; i < guionesbueno.length; i++) {
+		if(guionesbueno[i] == letra) {
+		System.out.println("Error, Ya has introducido esta letra");
+		letra = sc.next().charAt(0);
+	}
+	}
+	
+	
 	temp = contador;
 	for (int i = 0; i < palabra.length; i++) {
 		if(letra == palabra[i]) {
 			guionesbueno[i] = letra;
 			contador++;
-			mostrar(guionesbueno);
+			
 		}
 		
 	}
+	
+	
 	
 	
 	
@@ -121,7 +151,7 @@ public class Ahorcado {
 	
 	if(palabra.length == contador) {
 		
-		System.out.println("\n\nFin palabra, has ganado");
+		System.out.println("\n\nFeliciades!!!, has ganado");
 		
 			sc.nextLine();
 			System.out.println("\nQuieres volver a jugar? (si/no)");
@@ -143,7 +173,6 @@ public class Ahorcado {
 		
 		}
 	}
-	System.out.println("Hasta pronto");
 		
 	
 	}
