@@ -2633,7 +2633,6 @@ areas
 areaway
 areawide
 aren
-aren't
 arena
 arenas
 areolar
@@ -7649,7 +7648,6 @@ camshaft
 camshafts
 camus
 can
-can't
 canaan
 canada
 canadian
@@ -12686,7 +12684,6 @@ coughers
 coughing
 coughs
 could
-couldn't
 coulomb
 council
 councillor
@@ -16121,7 +16118,6 @@ diddlers
 diddles
 diddling
 didgeridoo
-didn't
 didsbury
 die
 diebold
@@ -17740,7 +17736,6 @@ doer
 doers
 does
 doeskin
-doesn't
 doff
 doffed
 doffing
@@ -17849,7 +17844,6 @@ domino
 dominoes
 dominus
 don
-don't
 donald
 donaldson
 donate
@@ -25891,7 +25885,6 @@ haddock
 haddon
 hades
 hadley
-hadn't
 hadrian
 haematology
 haemoglobin
@@ -26491,7 +26484,6 @@ havana
 havant
 have
 haven
-haven't
 havens
 haver
 havered
@@ -26555,9 +26547,6 @@ hazily
 haziness
 hazy
 he
-he'd
-he'll
-he's
 head
 headache
 headaches
@@ -28181,11 +28170,6 @@ hysteric
 hysterical
 hysterically
 hythe
-i
-i'd
-i'll
-i'm
-i've
 iain
 iamb
 iambic
@@ -30857,7 +30841,6 @@ islet
 islets
 isleworth
 islington
-isn't
 isobar
 isobars
 isocline
@@ -30893,9 +30876,6 @@ istanbul
 isthmus
 isthmuses
 it
-it'd
-it'll
-it's
 italian
 italians
 italic
@@ -34895,7 +34875,6 @@ mayflower
 mayfly
 mayhap
 mayhem
-mayn't
 mayo
 mayonnaise
 mayor
@@ -37076,7 +37055,6 @@ mustering
 musters
 mustily
 mustiness
-mustn't
 musts
 musty
 mutable
@@ -38264,8 +38242,6 @@ nymphomania
 nymphomaniac
 nymphomaniacs
 nymphs
-o
-o'clock
 oaf
 oafish
 oafs
@@ -39290,7 +39266,6 @@ oubliette
 oubliettes
 ouch
 ought
-oughtn't
 ounce
 ounces
 oundle
@@ -50255,7 +50230,6 @@ shamrock
 shamrocks
 shams
 shan
-shan't
 shandy
 shanghai
 shank
@@ -50324,8 +50298,6 @@ shaw
 shawl
 shawls
 she
-she'd
-she'll
 shea
 sheaf
 sheafs
@@ -50602,7 +50574,6 @@ shoulder
 shouldered
 shouldering
 shoulders
-shouldn't
 shout
 shouted
 shouting
@@ -56238,7 +56209,6 @@ thanksgiver
 thanksgivers
 thanksgiving
 that
-that's
 thatch
 thatched
 thatcher
@@ -56323,7 +56293,6 @@ therapist
 therapists
 therapy
 there
-there's
 thereabout
 thereabouts
 thereafter
@@ -56384,10 +56353,6 @@ thessalonians
 theta
 thetford
 they
-they'd
-they'll
-they're
-they've
 thiamin
 thick
 thicken
@@ -63466,7 +63431,6 @@ washington
 washout
 washtub
 washy
-wasn't
 wasp
 waspish
 waspishly
@@ -63614,10 +63578,6 @@ wayward
 wayworn
 wc
 we
-we'd
-we'll
-we're
-we've
 wea
 weak
 weaken
@@ -63812,7 +63772,6 @@ wentworth
 weobley
 wept
 were
-weren't
 wesley
 wesleyan
 wessex
@@ -64539,7 +64498,6 @@ wombats
 wombs
 women
 won
-won't
 wonder
 wondered
 wonderful
@@ -64729,7 +64687,6 @@ worthwhile
 worthy
 wotan
 would
-wouldn't
 wound
 wounded
 wounding
@@ -64872,7 +64829,6 @@ wymondham
 wynn
 wyoming
 wyvern
-x
 xavier
 xenon
 xenophobia
@@ -64881,34 +64837,9 @@ xenophon
 xerography
 xerox
 xerxes
-xi
-xian
-xii
-xiii
-xiv
-xix
-xmas
-xray
-xrays
-xv
-xvi
-xvii
-xviii
-xx
-xxi
-xxii
-xxiii
-xxiv
-xxix
-xxv
-xxvi
-xxvii
-xxviii
-xxx
 xylene
 xylophone
 xylophones
-y
 yacht
 yachters
 yachting
@@ -65052,11 +64983,6 @@ york
 yorkshire
 yoruba
 yosemite
-you
-you'd
-you'll
-you're
-you've
 young
 younger
 youngest
@@ -65087,7 +65013,6 @@ yummy
 yvette
 yvonne
 ywca
-z
 zabaglione
 zagreb
 zaire
