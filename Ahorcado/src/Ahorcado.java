@@ -36,6 +36,40 @@ public class Ahorcado {
 			juego();
 		}else if(elegir  == 2){
 			System.out.println("RANKING DE JUGADORES");
+			
+			String nomfit = "./ranking.bin";
+			
+			
+			
+			try {
+				DataInputStream LeeFichero = new DataInputStream(new FileInputStream(nomfit));
+				
+				
+				
+				for (int i = 0; i < 4; i++) {
+					
+					texto += String.valueOf(LeeFichero.readInt()) + ",";
+					
+					texto += LeeFichero.readUTF()  + ",";
+					
+					texto += LeeFichero.readUTF() + ",";
+				
+				}
+				
+				for (int i = 0; i < 2; i++) {
+					texto += String.valueOf(LeeFichero.readInt()) + ",";
+				}
+				
+				System.out.println(texto);
+				
+			
+			} catch (EOFException e) {
+				System.out.println("Fin del fichero");
+			} catch (IOException e) {
+				System.out.println("Error E/S");
+			}
+			
+			
 		}else if(elegir == 3) {
 			repetir = false;
 		}
@@ -46,7 +80,7 @@ public class Ahorcado {
 		
 		System.out.println("Hasta pronto!!!");
 
-	}
+	}			
 
 	public static void juego() {
 		
@@ -60,12 +94,10 @@ public class Ahorcado {
 		boolean repetirtodo = true;
 		char letra;
 		int contador = 0;
-		int contadorfallos = 0;
 		int temp = 0;
 		int fin = 0;
-		String volver = "none";
+		String volver = "none";	
 		int cvictorias = 0;
-		
 
 		try {
 			// Abrir el fichero indicado en la variable nombreFichero
@@ -85,14 +117,11 @@ public class Ahorcado {
 	
 		while(repetirtodo) {
 			repetir = true;
-			char comprobar[] = new char [27];
-			int cn = 0;
+			
 		
 		int aleatorio = rand.nextInt(65119);
 
 		tiempoespera();
-
-			System.out.println(s[aleatorio]);//Printa la letra
 
 			char[] palabra = s[aleatorio].toCharArray();
 			char[] guionesbueno = new char [palabra.length];
@@ -145,7 +174,7 @@ public class Ahorcado {
 						System.out.println("\nQuieres volver a jugar? (si/no)");
 						volver = sc.nextLine().toLowerCase();
 					} catch (Exception e) {
-						System.out.println("Caracter inválido, vuelve a elegir \n");
+						System.out.println("Caracter invalido, vuelve a elegir \n");
 					}
 				} while (!volver.equals("si") && !volver.equals("no"));
 				
@@ -163,8 +192,6 @@ public class Ahorcado {
 		}
 	}
 		
-	
-	
 	if(palabra.length == contador) {
 		
 		System.out.println("\n\nFeliciades!!!, has ganado");
@@ -220,7 +247,6 @@ public class Ahorcado {
 			System.out.println("Error E/S: " + e);
 		}
 		
-		
 		try {
 			// Abrir el fichero indicado en la variable nombreFichero
 			FileReader fr = new FileReader(fnombre);
@@ -260,7 +286,6 @@ public class Ahorcado {
 					   //Crear un objeto BufferedWriter
 					   BufferedWriter bw = new BufferedWriter(fw);
 					   
-					       //Leer, por ejemplo, un texto desde el tec
 					       //Escrbir en el fichero el texto
 					      	bw.write(nombre);
 					       
@@ -275,11 +300,8 @@ public class Ahorcado {
 						
 				    }catch(IOException e){
 				         System.out.println("Error E/S: "+e);
-				    	}
-				
+				    }
 			}
-				
-					
 				
 	}
 
